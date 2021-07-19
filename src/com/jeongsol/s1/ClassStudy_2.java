@@ -16,24 +16,24 @@ public class ClassStudy_2 {
 		Student [] students = new Student[count];
 		
 		for (int i=0;i<students.length;i++) {
-			//students[i] = new Student();
+			students[i] = new Student();
 			Student student = new Student();
 			
 			System.out.println("이름을 입력하세요.");
-			student.name = sc.next();
+			students[i].name = sc.next();
 			System.out.println("번호를 입력하세요.");
-			student.num = sc.nextInt();
+			students[i].num = sc.nextInt();
 			System.out.println("국어 점수를 입력하세요.");
-			student.kor = sc.nextInt();
+			students[i].kor = sc.nextInt();
 			System.out.println("영어 점수를 입력하세요.");
-			student.eng = sc.nextInt();
+			students[i].eng = sc.nextInt();
 			System.out.println("수학 점수를 입력하세요.");
-			student.math = sc.nextInt();
+			students[i].math = sc.nextInt();
 			
-			student.total = student.kor+student.eng+student.math;
-			student.avg = student.total/3.0;
+			students[i].total = students[i].kor+students[i].eng+students[i].math;
+			students[i].avg = students[i].total/3.0;
 			
-			students[i] = student;
+			//students[i] = student;
 		}
 		
 		// 모든 학생의 정보 출력
