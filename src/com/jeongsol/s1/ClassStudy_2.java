@@ -17,7 +17,7 @@ public class ClassStudy_2 {
 		
 		for (int i=0;i<students.length;i++) {
 			students[i] = new Student();
-			Student student = new Student();
+			//Student student = new Student();
 			
 			System.out.println("이름을 입력하세요.");
 			students[i].name = sc.next();
